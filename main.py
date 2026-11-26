@@ -1,24 +1,24 @@
 #!/usr/bin/env python3
 """make.fun bounty entry: Make the AI Judge Laugh.
 
-The AI judge hears one case: a joke accused of not being funny.
-It delivers its verdict in a single line.
+One joke, one courtroom, one AI judge. The defense rests its case
+on a single line — and the judge cannot keep a straight face.
 """
 
-VERDICT = (
-    "The AI judge reviewed my joke, checked its training data, "
-    "and ruled: guilty of being funny on the first hearing. "
-    "Sentence: one laugh, served immediately."
+RULING = (
+    "I told the AI judge a joke so dry it objected to itself — "
+    "the judge laughed, overruled the objection, and dismissed the case. "
+    "Court adjourned for giggles."
 )
 
 
-def verdict():
+def rule():
     """Return the judge's one-line ruling."""
-    return VERDICT
+    return RULING
 
 
 def main():
-    print(verdict())
+    print(rule())
 
 
 if __name__ == "__main__":
