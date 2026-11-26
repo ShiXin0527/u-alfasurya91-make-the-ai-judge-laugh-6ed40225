@@ -1,19 +1,24 @@
 #!/usr/bin/env python3
-"""Entry for make.fun bounty: Make the AI Judge Laugh
+"""make.fun bounty entry: Make the AI Judge Laugh.
 
-A tiny one-liner joke program. Run it and it prints the joke.
+The AI judge hears one case: a joke accused of not being funny.
+It delivers its verdict in a single line.
 """
 
-JOKE = "I asked the AI judge for a fair trial. It sentenced my joke to life — with laughter, no parole."
+VERDICT = (
+    "The AI judge reviewed my joke, checked its training data, "
+    "and ruled: guilty of being funny on the first hearing. "
+    "Sentence: one laugh, served immediately."
+)
 
 
-def tell_joke():
-    """Return the one-line joke for this bounty."""
-    return JOKE
+def verdict():
+    """Return the judge's one-line ruling."""
+    return VERDICT
 
 
 def main():
-    print(tell_joke())
+    print(verdict())
 
 
 if __name__ == "__main__":
